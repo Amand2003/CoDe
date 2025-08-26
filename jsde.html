@@ -157,30 +157,9 @@
           </div>
         </div>
         <div class="editor">
-          <textarea id="code-editor" spellcheck="false">// Example showing current time in console
-// This will log the current time every second
-
-// Store the interval ID so we can clear it later
-let intervalId;
-
-// Function to display the current time
-function displayTime() {
-    let a = new Date();
-    console.log(a.toString());
-}
-
-// Start the interval
-console.log("Starting time display (updates every second):");
-intervalId = setInterval(displayTime, 1000);
-
-// Automatically stop after 5 seconds to prevent console flooding
-setTimeout(() => {
-    clearInterval(intervalId);
-    console.log("Time display stopped after 5 seconds");
-}, 5000);
-
-// Display time immediately (don't wait for first interval)
-displayTime();</textarea>
+          <textarea id="code-editor" spellcheck="false">
+            console.log("Hello World")
+          </textarea>
           <div id="error-badge" class="error-badge" style="display: none;">Error on line 0</div>
         </div>
       </div>
@@ -246,3 +225,4 @@ displayTime();</textarea>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/javascript/javascript.min.js"></script>
 </body>
 </html>
+
